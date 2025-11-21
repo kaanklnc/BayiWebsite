@@ -1,0 +1,35 @@
+/* Global Renk Değişkenleri */
+:root {
+    --iddaa-green: #0a8f00; /* Ana Kurumsal Yeşil */
+    --text-light: #ffffff;
+    --text-dark: #222222;
+    --background-light: #ffffff;
+    --background-soft: #f7fcf8; /* Çok açık yeşilimsi beyaz */
+    --accent-yellow: #ffc107; /* Vurgu Rengi */
+}
+
+/* Basit Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Modern bir font varsayımı */
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--background-light);
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+}
+
+a {
+    text-decoration: none;
+    color: var(--iddaa-green);
+}
+
+/* Ana İçerik Konteyneri */
+.header-container, .hero-content, .about-container, .campaigns-container, .how-to-play-container, .testimonials-container, .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,157 @@
+/* src/components/Hero/Hero.css */
+.hero-modern {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0a0f0a;
+  color: white;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,143,0,0.7) 0%, rgba(0,0,0,0.85) 70%);
+  z-index: 1;
+}
+
+.hero-content-modern {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 1100px;
+  animation: floatIn 1.8s ease-out forwards;
+}
+
+@keyframes floatIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Yazı Tipleri ve Boyutları Güncellendi */
+.hero-title {
+  font-size: clamp(3rem, 7vw, 5.5rem); /* Boyut küçültüldü */
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0 0 16px;
+  line-height: 0.9;
+}
+
+.gold-text {
+  /* Yeni sofistike altın rengi */
+  background: linear-gradient(135deg, #FFD700 0%, #FDB931 50%, #FFD700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem; /* Boyut küçültüldü */
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.bayi-code {
+  font-size: 2.2rem; /* Boyut küçültüldü */
+  font-weight: 900;
+  color: #ffd700;
+  text-shadow: 0 0 30px rgba(255,215,0,0.6);
+}
+
+.hero-slogan {
+  font-size: clamp(1.1rem, 3vw, 1.5rem); /* Boyut küçültüldü */
+  font-weight: 400;
+  max-width: 700px; /* Genişlik daraltıldı */
+  margin: 30px auto 50px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* Buton Grubu */
+.hero-cta-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.cta-primary,
+.cta-telegram {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 36px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+}
+
+.cta-primary:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(255,215,0,0.6);
+}
+
+/* Telegram Butonu Özel Stili */
+.cta-telegram {
+  background: rgba(34, 158, 217, 0.2); /* Telegram Mavisi Opak */
+  border: 1px solid rgba(34, 158, 217, 0.4);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.cta-telegram:hover {
+  background: rgba(34, 158, 217, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(34, 158, 217, 0.2);
+}
+
+/* Güven Rozeti */
+.trust-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+
+.trust-badge svg {
+  color: #0a8f00;
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-primary,
+  .cta-telegram {
+    width: 80%;
+    justify-content: center;
+  }
+}

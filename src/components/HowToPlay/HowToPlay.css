@@ -1,0 +1,122 @@
+/* components/HowToPlay/HowToPlay.css */
+.howtoplay-premium {
+  padding: 160px 0;
+  background: linear-gradient(135deg, #0a100a 0%, #1a2a1a 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.howtoplay-premium::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,215,0,0.1)"/></svg>') repeat;
+  opacity: 0.3;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 80px auto 100px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.step-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 28px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 2;
+}
+
+.step-card:hover {
+  transform: translateY(-20px);
+  border-color: #ffd700;
+  box-shadow: 0 30px 60px rgba(255,215,0,0.2);
+}
+
+.step-number {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  font-size: 1.4rem;
+  margin: 20px 0 15px;
+}
+
+.step-connector {
+  position: absolute;
+  top: 80px;
+  left: 100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700, transparent);
+  z-index: 1;
+}
+
+.step-card:last-child .step-connector { display: none; }
+
+.alternative-box {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255,215,0,0.1);
+  border: 2px dashed #ffd700;
+  border-radius: 32px;
+  padding: 50px;
+  position: relative;
+}
+
+.pulse-icon {
+  color: #ffd700;
+  display: inline-block;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Telegram Buton Stili */
+.telegram-cta {
+  margin-top: 30px;
+  display: inline-block;
+  background: #229ED9; /* Telegram Mavisi */
+  color: white;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(34, 158, 217, 0.4);
+  transition: transform 0.3s;
+}
+
+.telegram-cta:hover {
+  transform: translateY(-3px);
+  background: #1c8bbf;
+}
+
+@media (max-width: 992px) {
+  .steps-grid { grid-template-columns: 1fr 1fr; }
+  .step-connector { display: none; }
+}
+
+@media (max-width: 600px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
