@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       {/* Dinamik SEO Yönetimi */}
       <Helmet>
-        <title>Belen Şans Oyunları Yetkili iddaa Bayi - 10088 Koduyla Güvenle Oyna</title>
-        <meta name="description" content="iddaa.com yetkili bayisi Belen Şans Oyunları. Güvenilir bahis kupon hizmeti, özel kampanyalar ve 10088 bayi kodu. Sorumlu Oyun." />
+        <title>Belen Şans Oyunları Yetkili iddaa Bayi - 300688 Koduyla Güvenle Oyna</title>
+        <meta name="description" content="iddaa.com yetkili bayisi Belen Şans Oyunları. Güvenilir bahis kupon hizmeti, özel kampanyalar ve 300688 bayi kodu. Sorumlu Oyun." />
       </Helmet>
       
       <Header />
@@ -22,10 +22,15 @@ function App() {
         <div id="home">
             <Hero />
         </div>
+        
         <div id="about">
             <AboutPreview /* isVisible={true} */ /> 
-        </div>
+        </div >
+
+        <div id="campaigns">
         <Campaigns /> 
+        </div>
+
         <div id="how-to-play">
              <HowToPlay /> 
         </div>

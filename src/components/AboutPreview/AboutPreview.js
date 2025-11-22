@@ -25,7 +25,7 @@ const AboutPreview = () => {
         </svg>
       ), 
       title: "Resmi Yetkili Bayi", 
-      desc: "iddaa.com 10088" 
+      desc: "iddaa.com 300688" 
     },
     { 
       icon: (
@@ -62,7 +62,7 @@ const AboutPreview = () => {
             </p>
             <div className="bayi-code-display">
               <span>Yetkili Bayi Kodumuz</span>
-              <strong>10088</strong>
+              <strong>300688</strong>
             </div>
             <a href="#contact" className="lux-btn">
               Bize Ulaşın

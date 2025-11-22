@@ -6,7 +6,7 @@ const HowToPlay = () => {
   const steps = [
     { num: "01", title: "iddaa.com'a Giriş Yap", desc: "Web veya mobil uygulamadan hesabınıza giriş yapın" },
     { num: "02", title: "Bayi Kodu Alanını Bul", desc: "Kupon oluştururken 'Bayi Seç' bölümüne gidin" },
-    { num: "03", title: "10088 Kodunu Gir", desc: "Yetkili bayi kodumuzu yazın ve onaylayın" },
+    { num: "03", title: "300688 Kodunu Gir", desc: "Yetkili bayi kodumuzu yazın ve onaylayın" },
     { num: "04", title: "Kuponunu Oluştur!", desc: "Artık Belen Şans güvencesiyle oynuyorsun" },
   ];
 

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="container footer-grid">
           <div className="brand-col">
-<img src={logoPng} alt="Belen Şans Oyunları" className="footer-logo-img" />            <p className="tagline">Yetkili Bayi 10088</p>
+<img src={logoPng} alt="Belen Şans Oyunları" className="footer-logo-img" />            <p className="tagline">Yetkili Bayi 300688</p>
             <p className="motto">Güvenle Kazanmanın Tek Adresi</p>
           </div>
 
@@ -21,7 +21,7 @@ const Footer = () => {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <p>Atatürk Cd. No:15/A Belen/Hatay</p>
+              <p>Atatürk Cd. No:15/A Silifke/Mersin</p>
             </div>
 
             <div className="contact-item">
@@ -49,7 +49,7 @@ const Footer = () => {
               Sitemiz üzerinden doğrudan bahis oynanamaz. 
               Sorumlu oyun prensibini benimseriz.
             </p>
-            <div className="bayi-code">Bayi Kodu: <strong>10088</strong></div>
+            <div className="bayi-code">Bayi Kodu: <strong>300688</strong></div>
           </div>
         </div>
       </div>

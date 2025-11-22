@@ -15,7 +15,7 @@ const Hero = () => {
           BELEN <span className="gold-text">ŞANS</span> OYUNLARI
         </h1>
         <p className="hero-subtitle">
-          Yetkili Bayi <span className="bayi-code">10088</span> • 10+ Yıl Güven
+          Yetkili Bayi <span className="bayi-code">300688</span> • 10+ Yıl Güven
         </p>
         <p className="hero-slogan">
           Kazanma Heyecanı Artık Daha Güvenli ve Daha Yakın

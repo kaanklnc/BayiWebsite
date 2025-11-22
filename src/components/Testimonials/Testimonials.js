@@ -8,7 +8,7 @@ const Testimonials = () => {
     { name: "Zeynep K.", text: "WhatsApp’tan 2 dakikada kupon hazır. Harika hizmet!", rating: 5 },
     { name: "Emre Can", text: "Kampanyalar gerçek, kazançlar hızlı. Teşekkürler Belen!", rating: 5 },
     { name: "Seda Hanım", text: "Yeni başlayanlar için en güvenilir bayi. Kesinlikle tavsiye ederim.", rating: 5 },
-    { name: "Mert 06", text: "Bayi kodu 10088 = Kazanç garantisi", rating: 5 },
+    { name: "Mert 06", text: "Bayi kodu 300688 = Kazanç garantisi", rating: 5 },
   ];
 
   return (
